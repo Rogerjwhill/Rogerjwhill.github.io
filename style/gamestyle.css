@@ -1,5 +1,5 @@
 html
-{ height: 100%;
+{ min-height: 100%;
 }
 
 *
@@ -52,145 +52,29 @@ a, a:hover
 { outline: none;
   text-decoration: underline;
   color: #29425E;
-}
-
-a:hover
-{ text-decoration: none;
-}
-
-.left
-{ float: left;
-  width: auto;
-  margin-right: 10px;
-}
-
-.right
-{ float: right;
-  width: auto;
-  margin-left: 10px;
-}
-
-.center
-{ display: block;
-  text-align: center;
-  margin: 20px auto;
-}
-
-blockquote
-{ margin: 20px 0;
-  padding: 10px 20px 0 20px;
-  border: 1px solid #E5E5DB;
-  background: #FFF;
-}
-
-ul
-{ margin: 2px 0 22px 17px;
-}
-
-ul li
-{ list-style-type: circle;
-  margin: 0 0 6px 0;
-  padding: 0 0 4px 5px;
-}
-
-ol
-{ margin: 8px 0 22px 20px;
-}
-
-ol li
-{ margin: 0 0 11px 0;
-}
-
-#main, #logo, #menubar, #site_content, #footer
-{ margin-left: auto;
-  margin-right: auto;
+  cursor: pointer;
 }
 
 
-
-.mySlides {display: none;}
-img
-{vertical-align: middle;
-border: 0;
-}
-
-/* Slideshow container */
 #header {
   width: 100%;
   max-width: 1000px;
-  height: 360px;
   overflow: hidden;
   position: relative;
   margin: auto;
 }
 
-.Uni {
-  font-size: 8px;
-  padding: 0 0 0 0;
-  border: 0 0 0 0;
-  margin: 0 0 0 0;
-  position: absolute;
-  top: 5%;
-  height: auto;
-  width: 20%;
-  text-align: left;
-  background: none;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.Uni h2 {
-  padding: 5px 5px 5px 5px;
-  border: 0 0 0 0;
-  margin: 0 0 0 0;
-  color: #000;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  text-align: left;
-}
-
-/* Caption text */
-.text {
-  font-size: 15px;
-  padding: 0 0 0 0;
-  border: 0 0 0 0;
-  margin: 0 0 0 0;
-  position: absolute;
-  top: 85%;
-  height: auto;
-  width: 25%;
-  text-align: left;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.text h1{
-  padding: 10px 0 10px 10px;
-  border: 0 0 0 0;
-  margin: 0 0 0 0;
-  color: #000;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  text-align: left;
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .menubar {font-size: 11px}
-}
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  .menubar {font-size: 11px}
-}
 
 .menubar
 { display: grid;
-  grid-template-areas: "blankf home cv publications interests contact blanke";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "blankf home cv publications interests blanke";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   position: relative;
   margin: auto;
   grid-gap: 15px;
   width: 100%;
   max-width: 1000px;
-  height: 72px;
+  height: 10vh;
   padding: 0;
   background: #29425E;
 }
@@ -267,30 +151,6 @@ Contact
 {grid-area: contact;
   }
 
-ul#menu, ul#menu li
-{ float: left;
-  margin: 0;
-  padding: 0;
-}
-
-ul#menu li
-{ list-style: none;
-}
-
-ul#menu li a
-{ letter-spacing: 0.1em;
-  font: normal 100% 'lucida sans unicode', arial, sans-serif;
-  display: block;
-  float: left;
-  height: 37px;
-  padding: 29px 26px 6px 26px;
-  text-align: center;
-  color: #FFF;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: transparent;
-}
-
 #site_content
 { width: 100%;
   max-width: 1000px;
@@ -303,24 +163,6 @@ ul#menu li a
 }
 
 
-#content
-{ text-align: left;
-  width: 595px;
-  padding: 24px;
-}
-
-#content ul
-{ margin: 2px 0 22px 0px;
-}
-
-#content ul li
-{ list-style-type: none;
-  background: url(bullet.png) no-repeat;
-  margin: 0 0 6px 0;
-  padding: 0 0 4px 25px;
-  line-height: 1.5em;
-}
-
 #footer
 { width: 100%;
   max-width: 1000px;
@@ -331,21 +173,6 @@ ul#menu li a
   background: #29425E;
   color: #FFF;
   letter-spacing: 0.1em;
-}
-
-#footer a
-{ color: #FFF;
-  text-decoration: none;
-}
-
-#footer a:hover
-{ color: #FFF;
-  text-decoration: underline;
-}
-
-#footer h2
-{
-  padding: 0px;
 }
 
 .rules {
@@ -376,13 +203,14 @@ ul#menu li a
 
 .container {
   width: 100%;
-  max-width: 414px;
-  max-height: 736px;
+  max-width: 320px;
+  height: 90vh;
   border-radius: 12px;
   box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   display: grid;
   grid-template-rows: repeat(7,1fr);
+  background: #000;
 }
 
 .titleBlock {
@@ -401,12 +229,47 @@ ul#menu li a
   -webkit-text-fill-color: transparent;
 }
 .titleBlock h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 .titleBlock h2{
   font-size: 30px;
 }
+.titleBlock h1 i {
+  font-size: 20px;
+  color:    #D5AD6D; /*if no support for background-clip*/
+  background: -webkit-linear-gradient(transparent, transparent),
+             -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+@media only screen and (max-width: 320px) {
+  .menubar a, #current {
+    font-size: 12px;
+  }
+  .text {
+    bottom: 0;
+  }
+  .mySlides h2 {
+    display: none;
+  }
+  .mySlides .text h1 {
+    font-size: 12px;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .menubar a, #current {
+    font-size: 15px;
+  }
+  .text {
+    bottom: 0;
+  }
+  .text h1 {
+    font-size: 15px;
+  }
+}
 
 .scoreBoard {
   font-size: 20px;

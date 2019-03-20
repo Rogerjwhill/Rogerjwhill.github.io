@@ -209,17 +209,7 @@ img{
   cursor: auto;
   }
 
-/* .menubar h1
-{ width: 100%;
-  height: auto;
-  text-decoration: none;
-  background: #000;
-  font-size: 20px;
-  color: #FFF;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  } */
+
 
 .menubar a:hover
 { color: #FFF;
