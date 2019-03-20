@@ -1,0 +1,431 @@
+html
+{ height: 100%;
+}
+
+*
+{ margin: 0;
+  padding: 0;
+}
+
+body
+{ font: normal .80em 'trebuchet ms', arial, sans-serif;
+  background: #F0EFE2;
+  color: #777;
+}
+
+p
+{ padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+
+h1, h2, h3, h4, h5, h6
+{ font: normal 175% 'century gothic', arial, sans-serif;
+  color: #1293EE;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+}
+
+h2
+{ font: normal 175% 'century gothic', arial, sans-serif;
+  color: #1293EE;
+}
+
+h4, h5, h6
+{ margin: 0;
+  padding: 0 0 5px 0;
+  font: normal 120% arial, sans-serif;
+  color: #1293EE;
+}
+
+h5, h6
+{ font: italic 95% arial, sans-serif;
+  padding: 0 0 15px 0;
+  color: #000;
+}
+
+h6
+{ color: #362C20;
+}
+
+a, a:hover
+{ outline: none;
+  text-decoration: underline;
+  color: #29425E;
+}
+
+a:hover
+{ text-decoration: none;
+}
+
+.left
+{ float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+.right
+{ float: right;
+  width: auto;
+  margin-left: 10px;
+}
+
+.center
+{ display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+blockquote
+{ margin: 20px 0;
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+}
+
+ul
+{ margin: 2px 0 22px 17px;
+}
+
+ul li
+{ list-style-type: circle;
+  margin: 0 0 6px 0;
+  padding: 0 0 4px 5px;
+}
+
+ol
+{ margin: 8px 0 22px 20px;
+}
+
+ol li
+{ margin: 0 0 11px 0;
+}
+
+#main, #logo, #menubar, #site_content, #footer
+{ margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.mySlides {
+  display: none;
+}
+img{
+  vertical-align: middle;
+  border: 0;
+}
+
+/* Slideshow container */
+#header {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+#header h2 {
+  position: absolute;
+  top: 0%;
+  font-size: 12px;
+  min-width: 15%;
+  width: auto;
+  max-width: 150px;
+  padding: 10px 10px 10px 10px;
+  border: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #000;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Caption text */
+.text {
+  font-size: 15px;
+  padding: 0 0 0 0;
+  border: 0 0 0 0;
+  margin: 0 0 0 0;
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  min-width: 25%;
+  width: auto;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.text h1{
+  padding: 10px 10px 10px 10px;
+  border: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #000;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-align: left;
+}
+
+.menubar
+{ display: grid;
+  grid-template-areas: "blankf home cv publications interests contact blanke";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  position: relative;
+  margin: auto;
+  grid-gap: 15px;
+  width: 100%;
+  max-width: 1000px;
+  height: 72px;
+  padding: 0;
+  background: #29425E;
+}
+
+.menubar a
+{ width: 100%;
+  height: 100%;
+  text-decoration: none;
+  background: #29425E;
+  font-size: 20px;
+  color: #FFF;
+  display:flex;/*CSS3*/
+  align-items:center;/*Vertical align*/
+  justify-content:center;/*horizontal align*/
+  cursor: pointer;
+  text-align: center;
+  }
+
+#current
+{ width: 100%;
+  height: 100%;
+  text-decoration: underline;
+  background: #29425E;
+  font-size: 20px;
+  color: #FFF;
+  display:flex;/*CSS3*/
+  align-items:center;/*Vertical align*/
+  justify-content:center;/*horizontal align*/
+  cursor: auto;
+  }
+
+/* .menubar h1
+{ width: 100%;
+  height: auto;
+  text-decoration: none;
+  background: #000;
+  font-size: 20px;
+  color: #FFF;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  } */
+
+.menubar a:hover
+{ color: #FFF;
+  text-decoration: underline;
+  }
+
+Blankf
+{ grid-area: blankf;
+  }
+
+Blanke
+{ grid-area: blanke;
+  }
+
+Home
+{ grid-area: home;
+}
+
+CV
+{ grid-area: cv;
+  }
+
+Pub
+{grid-area: publications;
+  }
+
+Interests
+{grid-area: interests;
+  }
+
+Contact
+{grid-area: contact;
+  }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .menubar a, #current {font-size: 12px}
+  .text {
+    bottom: 0;
+  }
+  .mySlides h2 {
+    display: none;
+  }
+  .mySlides .text h1 {
+    font-size: 12px;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .menubar a, #current {font-size: 15px}
+  .text {
+    bottom: 0;
+  }
+  .text h1 {
+    font-size: 15px;
+  }
+}
+
+#site_content
+{ width: 100%;
+  max-width: 1000px;
+  /* overflow: hidden; */
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background: #FFF;
+}
+
+
+#content
+{ text-align: left;
+  max-width: 595px;
+  width: auto;
+  padding: 24px;
+}
+
+#content ul
+{ margin: 2px 0 22px 0px;
+}
+
+#content ul li
+{ list-style-type: none;
+  margin: 0 0 6px 0;
+  padding: 0 0 4px 25px;
+  line-height: 1.5em;
+}
+
+#footer
+{ width: 100%;
+  max-width: 1000px;
+  font: 'lucida sans unicode', arial, sans-serif;
+  height: 33px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  background: #29425E;
+  color: #FFF;
+  letter-spacing: 0.1em;
+}
+
+#footer a
+{ color: #FFF;
+  text-decoration: none;
+}
+
+#footer a:hover
+{ color: #FFF;
+  text-decoration: underline;
+}
+
+#footer h2
+{
+  font-size: 20px;
+  padding: 0px;
+}
+@media only screen and (max-width: 600px) {
+  #footer h2 {
+    font-size: 15px;
+  }
+}
+
+.search
+{ color: #5D5D5D;
+  border: 1px solid #BBB;
+  width: 134px;
+  padding: 4px;
+  font: 100% arial, sans-serif;
+}
+
+#colours
+{ height: 0px;
+  text-align: right;
+  padding: 66px 16px 0px 300px;
+}
+
+.form_settings
+{ margin: 15px 0 0 0;
+}
+
+.form_settings p
+{ padding: 0 0 4px 0;
+}
+
+.form_settings span
+{ float: left;
+  width: 200px;
+  text-align: left;
+}
+
+.form_settings input, .form_settings textarea
+{ padding: 5px;
+  width: 299px;
+  font: 100% arial;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+  color: #47433F;
+}
+
+.form_settings .submit
+{ font: 100% arial;
+  border: 1px solid;
+  width: 99px;
+  margin: 0 0 0 212px;
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer;
+  background: #7D0F0F;
+  color: #FFF;
+}
+
+.form_settings textarea, .form_settings select
+{ font: 100% arial;
+  width: 299px;
+}
+
+.form_settings select
+{ width: 310px;
+}
+
+.form_settings .checkbox
+{ margin: 4px 0;
+  padding: 0;
+  width: 14px;
+  border: 0;
+  background: none;
+}
+
+.separator
+{ width: 100%;
+  height: 0;
+  border-top: 1px solid #D9D5CF;
+  border-bottom: 1px solid #FFF;
+  margin: 0 0 20px 0;
+}
+
+table
+{ margin: 10px 0 30px 0;
+}
+
+table tr th, table tr td
+{ background: #3B3B3B;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;
+}
+
+table tr td
+{ background: #F0EFE2;
+  color: #47433F;
+  border-top: 1px solid #FFF;
+}
