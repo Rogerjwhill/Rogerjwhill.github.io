@@ -3,6 +3,7 @@ const display = document.querySelector('.calculator__display')
 const targetNum = document.querySelector('.targetNum')
 const bar  = document.querySelector('.bar')
 const bestScore = document.querySelector('.bestScore')
+const lastScore = document.querySelector('.lastScore')
 
 
 function progress() {
@@ -14,7 +15,9 @@ function progress() {
     if (sec < 1) {
       date.setSeconds(date.getSeconds() + 2)
       setDigits(date)
+      lastScore.textContent = eval(targetNum.textContent)-1
       targetNum.textContent = '1';
+
     }
 };
 
