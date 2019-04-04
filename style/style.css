@@ -10,7 +10,7 @@ html
 body
 { font: normal .80em 'trebuchet ms', arial, sans-serif;
   background: #F0EFE2;
-  color: #777;
+  color: #555;
 }
 
 p
@@ -51,7 +51,7 @@ h6
 a, a:hover
 { outline: none;
   text-decoration: underline;
-  color: #29425E;
+  color: inherit;
 }
 
 a:hover
@@ -131,7 +131,7 @@ img{
 
 .menubar
 { display: grid;
-  grid-template-areas: "blankf home cv publications interests contact blanke";
+  grid-template-areas: "blankf home research cv publications blanke";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   position: relative;
   margin: auto;
@@ -188,21 +188,16 @@ Blanke
 Home
 { grid-area: home;
 }
+Research{
+  grid-area: research;
+}
 
-CV
-{ grid-area: cv;
-  }
+CV{
+  grid-area: cv;
+}
 
 Pub
 {grid-area: publications;
-  }
-
-Interests
-{grid-area: interests;
-  }
-
-Contact
-{grid-area: contact;
   }
 
 /* On smaller screens, decrease text size */

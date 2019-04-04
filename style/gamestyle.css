@@ -279,27 +279,23 @@ Contact
   background: #000;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
-  border:1px solid #FFF;
 }
 .bestTitle {
   text-align: center;
   color: #fff;
-  border-right:1px solid #FFF;
 }
 .bestScore {
   text-align: center;
   color: #fff;
-  border-right:1px solid #FFF;
 }
 .lastTitle {
   text-align: center;
   color: #fff;
-  border-right:1px solid #FFF;
 }
 .lastScore {
   text-align: center;
   color: #fff;
-  border-right:1px solid #FFF;
+
 }
 .targetTitle {
   text-align: center;
